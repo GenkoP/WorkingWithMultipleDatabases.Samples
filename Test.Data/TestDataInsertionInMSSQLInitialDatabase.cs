@@ -2,6 +2,7 @@
 using Data.Common.IoCModules;
 using Data.Models;
 using Data.SQL.Common.IoCModule;
+using Data.SQL.EF.IoCModules;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleInjector.Packaging;
 
@@ -17,6 +18,7 @@ namespace Test.Data
                 new TemporaryInMemoryDataStoresModule(),
                 new CommanBuildersModule(),
                 new DataCommiterModule(),
+                new DataEntityFrameworkModule(),
             };
 
             return packages;
