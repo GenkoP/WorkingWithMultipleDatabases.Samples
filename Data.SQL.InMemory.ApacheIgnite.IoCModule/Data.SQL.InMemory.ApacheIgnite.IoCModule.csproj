@@ -70,6 +70,10 @@
       <Project>{6C83CEA2-EC7F-44B0-A443-52C1530FC773}</Project>
       <Name>Data.SQL.InMemory.ApacheIgnite.Implementation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utility.Contracts\Utility.Contracts.csproj">
+      <Project>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</Project>
+      <Name>Utility.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

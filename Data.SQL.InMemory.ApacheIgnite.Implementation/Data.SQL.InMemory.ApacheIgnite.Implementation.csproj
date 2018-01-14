@@ -50,6 +50,7 @@
     <Compile Include="DataCommiters\RemoveDataCommiter.cs" />
     <Compile Include="DataCommiters\Users\InsertUserDataCommiter.cs" />
     <Compile Include="IgniteAdapter.cs" />
+    <Compile Include="IgniteInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +64,10 @@
     <ProjectReference Include="..\Data.Models\Data.Models.csproj">
       <Project>{5A96DFF9-C252-45CD-8974-6673F06BE3BB}</Project>
       <Name>Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility.Contracts\Utility.Contracts.csproj">
+      <Project>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</Project>
+      <Name>Utility.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
