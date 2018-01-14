@@ -47,12 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommanBuildersModule.cs" />
+    <Compile Include="DataCommiterModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data.Common.Contracts\Data.Common.Contracts.csproj">
+      <Project>{BD351398-D490-4218-82CD-7EF106224F25}</Project>
+      <Name>Data.Common.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data.SQL.Common.Contracts\Data.SQL.Common.Contracts.csproj">
       <Project>{807528F7-271F-497E-8964-7E58CE150778}</Project>
       <Name>Data.SQL.Common.Contracts</Name>
