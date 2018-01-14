@@ -16,6 +16,7 @@ namespace Test.Data
             {
                 new TemporaryInMemoryDataStoresModule(),
                 new CommanBuildersModule(),
+                new DataCommiterModule(),
             };
 
             return packages;
