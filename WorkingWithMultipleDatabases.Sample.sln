@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{670FFA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Common.Contracts", "Data.SQL.Common.Contracts\Data.SQL.Common.Contracts.csproj", "{807528F7-271F-497E-8964-7E58CE150778}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Common.Implementation", "Data.SQL.Common.Implementation\Data.SQL.Common.Implementation.csproj", "{11A1223D-CD45-4647-86A0-932AFD29696F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{807528F7-271F-497E-8964-7E58CE150778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{807528F7-271F-497E-8964-7E58CE150778}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{807528F7-271F-497E-8964-7E58CE150778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A1223D-CD45-4647-86A0-932AFD29696F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A1223D-CD45-4647-86A0-932AFD29696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A1223D-CD45-4647-86A0-932AFD29696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A1223D-CD45-4647-86A0-932AFD29696F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{55F33067-E96B-4F4C-8DA9-22BEA32EF721} = {7DFCA384-5BB4-4AA4-8655-DBE4D63998DE}
 		{670FFAC7-AE5D-432D-AB4E-C11623B57754} = {7DFCA384-5BB4-4AA4-8655-DBE4D63998DE}
 		{807528F7-271F-497E-8964-7E58CE150778} = {670FFAC7-AE5D-432D-AB4E-C11623B57754}
+		{11A1223D-CD45-4647-86A0-932AFD29696F} = {670FFAC7-AE5D-432D-AB4E-C11623B57754}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}
