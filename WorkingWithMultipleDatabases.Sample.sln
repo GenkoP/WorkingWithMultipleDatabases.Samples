@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.InMemory.ApacheIgn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.InMemory.ApacheIgnite.IoCModule", "Data.SQL.InMemory.ApacheIgnite.IoCModule\Data.SQL.InMemory.ApacheIgnite.IoCModule.csproj", "{499E8815-651C-444E-93CE-F3E59C0A766A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{35B611C6-FE97-4EAE-844F-E9E69534E8E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility.Contracts", "Utility.Contracts\Utility.Contracts.csproj", "{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,10 @@ Global
 		{499E8815-651C-444E-93CE-F3E59C0A766A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{499E8815-651C-444E-93CE-F3E59C0A766A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{499E8815-651C-444E-93CE-F3E59C0A766A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +137,8 @@ Global
 		{6B7801F8-09C4-41F2-9C25-5077AAF5C120} = {7DFCA384-5BB4-4AA4-8655-DBE4D63998DE}
 		{6C83CEA2-EC7F-44B0-A443-52C1530FC773} = {4C0C6780-ED0E-47EA-87B5-1DF64150708B}
 		{499E8815-651C-444E-93CE-F3E59C0A766A} = {4C0C6780-ED0E-47EA-87B5-1DF64150708B}
+		{35B611C6-FE97-4EAE-844F-E9E69534E8E6} = {C57AF2EA-5F20-4B2C-A7CE-44AA077EB85D}
+		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D} = {35B611C6-FE97-4EAE-844F-E9E69534E8E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}
