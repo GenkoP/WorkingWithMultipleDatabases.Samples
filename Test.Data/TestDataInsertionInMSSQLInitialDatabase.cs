@@ -1,4 +1,5 @@
 ﻿using System;
+using Data.Common.IoCModules;
 using Data.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleInjector.Packaging;
@@ -10,7 +11,12 @@ namespace Test.Data
     {
         protected override IPackage[] RegisterPackages()
         {
-            return new IPackage[0];
+            IPackage[] packages = new IPackage[]
+            {
+                new TemporaryInMemoryDataStoresModule(),
+            };
+
+            return packages;
         }
 
         [TestMethod]
