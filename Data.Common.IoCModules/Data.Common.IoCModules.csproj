@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataCommiterCleanerDecoratorModule.cs" />
     <Compile Include="InitializersModule.cs" />
     <Compile Include="TemporaryInMemoryDataStoresModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
