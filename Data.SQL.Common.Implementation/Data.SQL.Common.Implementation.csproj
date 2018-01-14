@@ -45,6 +45,7 @@
     <Compile Include="CommandBuilders\Promotions\RemovePromotionCommandBuilder.cs" />
     <Compile Include="CommandBuilders\Users\InsertUserCommandBuilder.cs" />
     <Compile Include="CommandBuilders\Users\RemoveUserCommandBuilder.cs" />
+    <Compile Include="DataCommiter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
