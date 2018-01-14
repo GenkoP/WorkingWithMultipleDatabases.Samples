@@ -6,10 +6,12 @@ namespace Data.Common.Implementation
 {
     public sealed class DataCommiterComposite : IDataCommiter
     {
+        private readonly ICleanable cleaner;
         private readonly IEnumerable<IDataCommiter> dataCommiters;
 
-        public DataCommiterComposite(IEnumerable<IDataCommiter> dataCommiters)
+        public DataCommiterComposite(ICleanable cleaner, IEnumerable<IDataCommiter> dataCommiters)
         {
+            this.cleaner = cleaner ?? throw new ArgumentNullException($"{nameof(cleaner)} should not be null");
             this.dataCommiters = dataCommiters ?? throw new ArgumentNullException($"{nameof(dataCommiters)} should not be null");
         }
 
@@ -19,6 +21,8 @@ namespace Data.Common.Implementation
             {
                 dataCommiter.Commit();
             }
+
+            this.cleaner.Clean();
         }
     }
 }
