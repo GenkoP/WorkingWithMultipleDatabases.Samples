@@ -47,6 +47,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemory", "InMemory", "{6B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.InMemory.ApacheIgnite.Implementation", "Data.SQL.InMemory.ApacheIgnite.Implementation\Data.SQL.InMemory.ApacheIgnite.Implementation.csproj", "{6C83CEA2-EC7F-44B0-A443-52C1530FC773}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.InMemory.ApacheIgnite.IoCModule", "Data.SQL.InMemory.ApacheIgnite.IoCModule\Data.SQL.InMemory.ApacheIgnite.IoCModule.csproj", "{499E8815-651C-444E-93CE-F3E59C0A766A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{6C83CEA2-EC7F-44B0-A443-52C1530FC773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C83CEA2-EC7F-44B0-A443-52C1530FC773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C83CEA2-EC7F-44B0-A443-52C1530FC773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499E8815-651C-444E-93CE-F3E59C0A766A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499E8815-651C-444E-93CE-F3E59C0A766A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499E8815-651C-444E-93CE-F3E59C0A766A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499E8815-651C-444E-93CE-F3E59C0A766A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +128,7 @@ Global
 		{660F076A-97A9-47A3-B078-9CC8C6E7BE76} = {D806AF9F-34B5-4126-B209-DC222E2B89AB}
 		{6B7801F8-09C4-41F2-9C25-5077AAF5C120} = {7DFCA384-5BB4-4AA4-8655-DBE4D63998DE}
 		{6C83CEA2-EC7F-44B0-A443-52C1530FC773} = {4C0C6780-ED0E-47EA-87B5-1DF64150708B}
+		{499E8815-651C-444E-93CE-F3E59C0A766A} = {4C0C6780-ED0E-47EA-87B5-1DF64150708B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}

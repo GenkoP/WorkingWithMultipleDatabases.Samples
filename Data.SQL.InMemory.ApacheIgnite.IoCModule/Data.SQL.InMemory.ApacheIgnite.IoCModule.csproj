@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DEC15C0-F6BF-40C1-9E7C-7546163E48E0}</ProjectGuid>
+    <ProjectGuid>{499E8815-651C-444E-93CE-F3E59C0A766A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Data.Common.Implementation</RootNamespace>
-    <AssemblyName>Data.Common.Implementation</AssemblyName>
+    <RootNamespace>Data.SQL.InMemory.ApacheIgnite.IoCModule</RootNamespace>
+    <AssemblyName>Data.SQL.InMemory.ApacheIgnite.IoCModule</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.12\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Packaging, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Packaging.4.0.12\lib\net40\SimpleInjector.Packaging.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,15 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CleanerComposite.cs" />
-    <Compile Include="DataCommiterComposite.cs" />
+    <Compile Include="ApacheIgniteModule.cs" />
+    <Compile Include="DataCommiterModudel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemporaryInMemoryDataStore.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data.Common.Contracts\Data.Common.Contracts.csproj">
       <Project>{BD351398-D490-4218-82CD-7EF106224F25}</Project>
       <Name>Data.Common.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Common.Implementation\Data.Common.Implementation.csproj">
+      <Project>{6DEC15C0-F6BF-40C1-9E7C-7546163E48E0}</Project>
+      <Name>Data.Common.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Models\Data.Models.csproj">
+      <Project>{5A96DFF9-C252-45CD-8974-6673F06BE3BB}</Project>
+      <Name>Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.SQL.InMemory.ApacheIgnite.Implementation\Data.SQL.InMemory.ApacheIgnite.Implementation.csproj">
+      <Project>{6C83CEA2-EC7F-44B0-A443-52C1530FC773}</Project>
+      <Name>Data.SQL.InMemory.ApacheIgnite.Implementation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
