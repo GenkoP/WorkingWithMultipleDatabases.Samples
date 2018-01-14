@@ -74,6 +74,10 @@
       <Project>{5a96dff9-c252-45cd-8974-6673f06be3bb}</Project>
       <Name>Data.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data.SQL.Common.IoCModule\Data.SQL.Common.IoCModule.csproj">
+      <Project>{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}</Project>
+      <Name>Data.SQL.Common.IoCModule</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
