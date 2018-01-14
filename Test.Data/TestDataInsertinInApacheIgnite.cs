@@ -1,6 +1,7 @@
 ﻿using System;
 using Data.Common.IoCModules;
 using Data.Models;
+using Data.SQL.InMemory.ApacheIgnite.IoCModule;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleInjector.Packaging;
 
@@ -14,6 +15,8 @@ namespace Test.Data
             IPackage[] packages = new IPackage[]
            {
                 new TemporaryInMemoryDataStoresModule(),
+                new ApacheIgniteModule(),
+                new DataCommiterModudel()
            };
 
             return packages;

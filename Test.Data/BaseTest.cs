@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Generic;
 using Data.Common.Contracts;
+using Data.Common.IoCModules;
 using Data.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleInjector;
 using SimpleInjector.Packaging;
+using Utility.Contracts;
 
 namespace Test.Data
 {
@@ -27,11 +30,20 @@ namespace Test.Data
                 package.RegisterServices(container);
             }
 
+            new InitializersModule().RegisterServices(container);
+
             container.Verify();
 
             dataCommiter = container.GetInstance<IDataCommiter>();
             userDataStore = container.GetInstance<ITemporaryInMemoryDataStore<Guid, User>>();
             promotionDataStore = container.GetInstance<ITemporaryInMemoryDataStore<Guid, Promotion>>();
+
+            IEnumerable<IInitializer> initializers = container.GetAllInstances<IInitializer>();
+
+            foreach (IInitializer initializer in initializers)
+            {
+                initializer.Initialize();
+            }
         }
 
         protected abstract IPackage[] RegisterPackages();

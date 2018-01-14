@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Apache.Ignite, Version=2.3.0.24009, Culture=neutral, PublicKeyToken=6e15f083b9518446, processorArchitecture=MSIL">
+      <HintPath>..\packages\Apache.Ignite.2.3.0\lib\net40\Apache.Ignite.exe</HintPath>
+    </Reference>
+    <Reference Include="Apache.Ignite.Core, Version=2.3.0.24009, Culture=neutral, PublicKeyToken=a487a7ff0b2aaa4a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Apache.Ignite.2.3.0\lib\net40\Apache.Ignite.Core.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -93,6 +99,14 @@
       <Project>{660F076A-97A9-47A3-B078-9CC8C6E7BE76}</Project>
       <Name>Data.SQL.EF.IoCModules</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data.SQL.InMemory.ApacheIgnite.IoCModule\Data.SQL.InMemory.ApacheIgnite.IoCModule.csproj">
+      <Project>{499E8815-651C-444E-93CE-F3E59C0A766A}</Project>
+      <Name>Data.SQL.InMemory.ApacheIgnite.IoCModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility.Contracts\Utility.Contracts.csproj">
+      <Project>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</Project>
+      <Name>Utility.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -104,4 +118,9 @@
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets'))" />
   </Target>
   <Import Project="..\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>
+if not exist "$(TargetDir)Libs" md "$(TargetDir)Libs"
+xcopy /s /y "$(SolutionDir)packages\Apache.Ignite.2.3.0\Libs\*.*" "$(TargetDir)Libs"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
