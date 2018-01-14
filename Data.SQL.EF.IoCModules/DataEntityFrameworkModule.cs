@@ -9,7 +9,7 @@ namespace Data.SQL.EF.IoCModules
     {
         public void RegisterServices(Container container)
         {
-            container.Register<DataContext>(() => new DataContext("MSQLTestMultipleDb"));
+            container.Register<DataContext>();
             container.Register<IDataCommandExecuter, DataCommandExecuter>();
         }
     }

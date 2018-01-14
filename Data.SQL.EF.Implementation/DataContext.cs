@@ -6,8 +6,8 @@ namespace Data.SQL.EF.Implementation
 {
     public class DataContext : DbContext
     {
-        public DataContext(string connectionStringName)
-           : base(connectionStringName)
+        public DataContext()
+           : base("MSQLTestMultipleDb")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<DataContext, MigrationConfiguration>());
         }
