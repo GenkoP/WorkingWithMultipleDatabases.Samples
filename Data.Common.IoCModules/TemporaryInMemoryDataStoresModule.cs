@@ -20,8 +20,8 @@ namespace Data.Common.IoCModules
             container.RegisterCollection<ICleanable>(temporaryInMemorydataStoreTypes);
             container.Register<ICleanable, CleanerComposite>();
 
-            container.Register<TemporaryInMemoryDataStore<Guid, User>, TemporaryInMemoryDataStore<Guid, User>>();
-            container.Register<TemporaryInMemoryDataStore<Guid, Promotion>, TemporaryInMemoryDataStore<Guid, Promotion>>();
+            container.Register<ITemporaryInMemoryDataStore<Guid, User>, TemporaryInMemoryDataStore<Guid, User>>();
+            container.Register<ITemporaryInMemoryDataStore<Guid, Promotion>, TemporaryInMemoryDataStore<Guid, Promotion>>();
 
             container.Register<IEntitiesForInsertingProvider<User>, TemporaryInMemoryDataStore<Guid, User>>();
             container.Register<IEntitiesForInsertingProvider<Promotion>, TemporaryInMemoryDataStore<Guid, Promotion>>();
