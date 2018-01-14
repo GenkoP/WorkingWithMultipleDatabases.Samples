@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Common.Implementat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Common.IoCModule", "Data.SQL.Common.IoCModule\Data.SQL.Common.IoCModule.csproj", "{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.EF.Implementation", "Data.SQL.EF.Implementation\Data.SQL.EF.Implementation.csproj", "{ADF39AF3-652D-4552-BA79-A0D3C545D5D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF39AF3-652D-4552-BA79-A0D3C545D5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF39AF3-652D-4552-BA79-A0D3C545D5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF39AF3-652D-4552-BA79-A0D3C545D5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF39AF3-652D-4552-BA79-A0D3C545D5D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{807528F7-271F-497E-8964-7E58CE150778} = {670FFAC7-AE5D-432D-AB4E-C11623B57754}
 		{11A1223D-CD45-4647-86A0-932AFD29696F} = {670FFAC7-AE5D-432D-AB4E-C11623B57754}
 		{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2} = {670FFAC7-AE5D-432D-AB4E-C11623B57754}
+		{ADF39AF3-652D-4552-BA79-A0D3C545D5D9} = {D806AF9F-34B5-4126-B209-DC222E2B89AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}
