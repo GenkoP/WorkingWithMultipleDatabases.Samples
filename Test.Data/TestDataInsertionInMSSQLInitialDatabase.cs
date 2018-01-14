@@ -18,6 +18,7 @@ namespace Test.Data
                 new TemporaryInMemoryDataStoresModule(),
                 new CommanBuildersModule(),
                 new DataCommiterModule(),
+                new DataCommiterCleanerDecoratorModule(),
                 new DataEntityFrameworkModule(),
             };
 
