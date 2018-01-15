@@ -1,6 +1,5 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SQLite;
 using Dapper;
 using Data.SQL.Common.Contracts;
 
@@ -10,10 +9,9 @@ namespace Data.SQL.Dapper.Implementation
     {
         private readonly IDbConnection dbConnection;
 
-        public DataCommandExecuter(string connectionStringName)
+        public DataCommandExecuter(string connectionString)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings[connectionStringName].ConnectionString;
-            dbConnection = new SqlConnection(connectionString);
+            dbConnection = new SQLiteConnection(connectionString);
         }
 
         public void Execute(string dataCommand)
