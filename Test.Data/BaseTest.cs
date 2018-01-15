@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 using Utility.Contracts;
+using Utility.IoCModule;
 
 namespace Test.Data
 {
@@ -30,7 +31,7 @@ namespace Test.Data
                 package.RegisterServices(container);
             }
 
-            new InitializersModule().RegisterServices(container);
+            new UtilityModule().RegisterServices(container);
 
             container.Verify();
 

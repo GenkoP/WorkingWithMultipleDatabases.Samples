@@ -72,6 +72,7 @@
     <Compile Include="TestDataInsertinInApacheIgnite.cs" />
     <Compile Include="TestDataInsertionInMSSQLInitialDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestDataInsertionInSQLiteUsingDapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -100,6 +101,10 @@
       <Project>{09F95E02-AB68-4DF3-B7D7-FF5B4D6A51B2}</Project>
       <Name>Data.SQL.Common.IoCModule</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data.SQL.Dapper.SQLite.IoCModule\Data.SQL.Dapper.SQLite.IoCModule.csproj">
+      <Project>{EDEE7C46-B5AD-4112-BE8E-6773B367FFB6}</Project>
+      <Name>Data.SQL.Dapper.SQLite.IoCModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Data.SQL.EF.IoCModules\Data.SQL.EF.IoCModules.csproj">
       <Project>{660F076A-97A9-47A3-B078-9CC8C6E7BE76}</Project>
       <Name>Data.SQL.EF.IoCModules</Name>
@@ -112,6 +117,13 @@
       <Project>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</Project>
       <Name>Utility.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utility.IoCModule\Utility.IoCModule.csproj">
+      <Project>{DE19E7CB-C26D-4BCB-B2ED-F67ACAED7DE7}</Project>
+      <Name>Utility.IoCModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQLiteDb\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
