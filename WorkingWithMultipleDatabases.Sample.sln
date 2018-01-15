@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combinations", "Combination
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Combinations.ApacheIgniteAndEF.IoCModule", "Data.SQL.Combinations.ApacheIgniteAndEF.IoCModule\Data.SQL.Combinations.ApacheIgniteAndEF.IoCModule.csproj", "{4DEA144A-E1E1-4656-BF2F-36C2B162B6B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SQL.Dapper.Implementation", "Data.SQL.Dapper.Implementation\Data.SQL.Dapper.Implementation.csproj", "{EA7344E6-86C9-4645-BFF1-11BA83005443}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{4DEA144A-E1E1-4656-BF2F-36C2B162B6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DEA144A-E1E1-4656-BF2F-36C2B162B6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DEA144A-E1E1-4656-BF2F-36C2B162B6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7344E6-86C9-4645-BFF1-11BA83005443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7344E6-86C9-4645-BFF1-11BA83005443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7344E6-86C9-4645-BFF1-11BA83005443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7344E6-86C9-4645-BFF1-11BA83005443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +155,7 @@ Global
 		{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D} = {35B611C6-FE97-4EAE-844F-E9E69534E8E6}
 		{066F1BDB-5CED-443C-AE88-CD42932C398F} = {7DFCA384-5BB4-4AA4-8655-DBE4D63998DE}
 		{4DEA144A-E1E1-4656-BF2F-36C2B162B6B4} = {066F1BDB-5CED-443C-AE88-CD42932C398F}
+		{EA7344E6-86C9-4645-BFF1-11BA83005443} = {55F33067-E96B-4F4C-8DA9-22BEA32EF721}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}
