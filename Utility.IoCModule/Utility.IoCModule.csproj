@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</ProjectGuid>
+    <ProjectGuid>{DE19E7CB-C26D-4BCB-B2ED-F67ACAED7DE7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Utility.Contracts</RootNamespace>
-    <AssemblyName>Utility.Contracts</AssemblyName>
+    <RootNamespace>Utility.IoCModule</RootNamespace>
+    <AssemblyName>Utility.IoCModule</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.12\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Packaging, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Packaging.4.0.12\lib\net40\SimpleInjector.Packaging.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IConfigurationProvider.cs" />
-    <Compile Include="IInitializer.cs" />
+    <Compile Include="UtilityModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utility.Contracts\Utility.Contracts.csproj">
+      <Project>{1AF8990B-99E1-4A78-B4FC-74CEAB3D392D}</Project>
+      <Name>Utility.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility.Implementation\Utility.Implementation.csproj">
+      <Project>{92737D76-AB7F-48A1-A308-E9A572BCB54D}</Project>
+      <Name>Utility.Implementation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

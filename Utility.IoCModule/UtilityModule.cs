@@ -1,14 +1,16 @@
 ﻿using SimpleInjector;
 using SimpleInjector.Packaging;
 using Utility.Contracts;
+using Utility.Implementation;
 
-namespace Data.Common.IoCModules
+namespace Utility.IoCModule
 {
-    public sealed class InitializersModule : IPackage
+    public sealed class UtilityModule : IPackage
     {
         public void RegisterServices(Container container)
         {
             container.RegisterCollection<IInitializer>();
+            container.Register<IConfigurationProvider, AppConfigurationProvider>();
         }
     }
 }

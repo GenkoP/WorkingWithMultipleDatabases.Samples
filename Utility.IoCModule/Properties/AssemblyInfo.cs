@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Data.SQL.Dapper.Implementation")]
+[assembly: AssemblyTitle("Utility.IoCModule")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Data.SQL.Dapper.Implementation")]
+[assembly: AssemblyProduct("Utility.IoCModule")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ea7344e6-86c9-4645-bff1-11ba83005443")]
+[assembly: Guid("de19e7cb-c26d-4bcb-b2ed-f67acaed7de7")]
 
 // Version information for an assembly consists of the following four values:
 //
