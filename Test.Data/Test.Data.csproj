@@ -70,6 +70,7 @@
     <Compile Include="BaseTest.cs" />
     <Compile Include="TestCombinationOfEFAndApacheIgniteInsert.cs" />
     <Compile Include="TestDataInsertinInApacheIgnite.cs" />
+    <Compile Include="TestDataInsertionInMongoDB.cs" />
     <Compile Include="TestDataInsertionInMSSQLInitialDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestDataInsertionInSQLiteUsingDapper.cs" />
@@ -92,6 +93,10 @@
     <ProjectReference Include="..\Data.Models\Data.Models.csproj">
       <Project>{5a96dff9-c252-45cd-8974-6673f06be3bb}</Project>
       <Name>Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.NoSQL.MongoDB.IoCModule\Data.NoSQL.MongoDB.IoCModule.csproj">
+      <Project>{DB7F98AE-2B55-4741-A7EC-993702DF32D2}</Project>
+      <Name>Data.NoSQL.MongoDB.IoCModule</Name>
     </ProjectReference>
     <ProjectReference Include="..\Data.SQL.Combinations.ApacheIgniteAndEF.IoCModule\Data.SQL.Combinations.ApacheIgniteAndEF.IoCModule.csproj">
       <Project>{4dea144a-e1e1-4656-bf2f-36c2b162b6b4}</Project>
