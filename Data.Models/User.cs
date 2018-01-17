@@ -2,7 +2,7 @@
 
 namespace Data.Models
 {
-    public class User
+    public class User : IEntityKey<Guid>
     {
         public Guid Id { get; set; }
 

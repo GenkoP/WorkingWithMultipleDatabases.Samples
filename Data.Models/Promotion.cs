@@ -2,7 +2,7 @@
 
 namespace Data.Models
 {
-    public class Promotion
+    public class Promotion : IEntityKey<Guid>
     {
         public Guid Id { get; set; }
 
