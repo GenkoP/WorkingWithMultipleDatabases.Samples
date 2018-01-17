@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility.IoCModule", "Utilit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.NoSQL.MongoDB.Implementation", "Data.NoSQL.MongoDB.Implementation\Data.NoSQL.MongoDB.Implementation.csproj", "{6EC46DE8-0FAE-498C-B507-37A5AD545569}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.NoSQL.MongoDB.IoCModule", "Data.NoSQL.MongoDB.IoCModule\Data.NoSQL.MongoDB.IoCModule.csproj", "{DB7F98AE-2B55-4741-A7EC-993702DF32D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{6EC46DE8-0FAE-498C-B507-37A5AD545569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EC46DE8-0FAE-498C-B507-37A5AD545569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EC46DE8-0FAE-498C-B507-37A5AD545569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7F98AE-2B55-4741-A7EC-993702DF32D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7F98AE-2B55-4741-A7EC-993702DF32D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7F98AE-2B55-4741-A7EC-993702DF32D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7F98AE-2B55-4741-A7EC-993702DF32D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,6 +193,7 @@ Global
 		{92737D76-AB7F-48A1-A308-E9A572BCB54D} = {35B611C6-FE97-4EAE-844F-E9E69534E8E6}
 		{DE19E7CB-C26D-4BCB-B2ED-F67ACAED7DE7} = {35B611C6-FE97-4EAE-844F-E9E69534E8E6}
 		{6EC46DE8-0FAE-498C-B507-37A5AD545569} = {D66B7317-FEA1-48C1-904B-A211FF931CEF}
+		{DB7F98AE-2B55-4741-A7EC-993702DF32D2} = {D66B7317-FEA1-48C1-904B-A211FF931CEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECAABE89-9818-4A51-A2E2-3A07262D6D7E}
